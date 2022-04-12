@@ -11,7 +11,7 @@ The following <ins>analysis</ins> will be done in this activity:
 
 ## Resources: 
 MechaCar CSV file : [MechaCar_mpg.csv](https://github.com/kritika2604/MechaCar_Statistical_Analysis/blob/main/MechaCar_mpg.csv)
-
+Suspension coil file: [Suspension_Coil.csv]
 ## Tools used: 
 Rstudio
 
@@ -39,5 +39,13 @@ he MechaCar prototypes were produced using multiple design specifications to ide
 
   - This linear model is **fairly efficient to predict** mpg of MechaCar prototypes.
     
-    
+ ## Analysis 2: Visualizations for the Trip Analysis
+ The MechaCar Suspension_Coil.csv dataset contains the results from multiple production lots. In this dataset, the weight capacities of multiple suspension coils were tested to determine if the manufacturing process is consistent across production lots. 
+ 
+  - Statistical summary is for all the lots:
+  <img width="270" alt="image" src="https://user-images.githubusercontent.com/94858846/163011497-942b2a7c-bfee-4d49-bd71-38f873d10d22.png">
+
+  - Statistical summary lot wise:
+  <img width="386" alt="image" src="https://user-images.githubusercontent.com/94858846/163011904-8c36efe4-cfbc-423d-8b3d-502a62c1de5b.png">
+
     
