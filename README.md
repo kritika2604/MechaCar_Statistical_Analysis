@@ -11,7 +11,7 @@ The following <ins>analysis</ins> will be done in this activity:
 
 ## Resources: 
 MechaCar CSV file : [MechaCar_mpg.csv](https://github.com/kritika2604/MechaCar_Statistical_Analysis/blob/main/MechaCar_mpg.csv)
-Suspension coil file: [Suspension_Coil.csv]
+Suspension coil file: [Suspension_Coil.csv](https://github.com/kritika2604/MechaCar_Statistical_Analysis/blob/main/Suspension_Coil.csv)
 ## Tools used: 
 Rstudio
 
