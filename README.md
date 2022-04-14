@@ -39,13 +39,43 @@ he MechaCar prototypes were produced using multiple design specifications to ide
 
   - This linear model is **fairly efficient to predict** mpg of MechaCar prototypes.
     
- ## Analysis 2: Visualizations for the Trip Analysis
+ ## Analysis 2: Summary Statistics on Suspension Coils
  The MechaCar Suspension_Coil.csv dataset contains the results from multiple production lots. In this dataset, the weight capacities of multiple suspension coils were tested to determine if the manufacturing process is consistent across production lots. 
  
-  - Statistical summary is for all the lots:
+  - Statistical summary for all the lots:
   <img width="270" alt="image" src="https://user-images.githubusercontent.com/94858846/163011497-942b2a7c-bfee-4d49-bd71-38f873d10d22.png">
 
   - Statistical summary lot wise:
   <img width="386" alt="image" src="https://user-images.githubusercontent.com/94858846/163011904-8c36efe4-cfbc-423d-8b3d-502a62c1de5b.png">
 
-    
+   ## Analysis 3: T-Tests on Suspension Coils
+   T-tests to determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1,500 pounds per square inch.
+
+  - T-test on Manufacturing Lot 1 shows a p-value = 1 --> Which shows that the p-value is higher than the significance level(=0.05). Therefore, we do not have sufficient evidence to reject the null hypothesis, and we would state that the two means are statistically same/similar.
+  <img width="374" alt="image" src="https://user-images.githubusercontent.com/94858846/163300633-db6fc01f-ce89-46ca-8d24-ae01c3916aee.png">
+  
+  - T-test on Manufacturing Lot 2 shows a p-value = 0.6 --> Which shows that the p-value is higher than the significance level(=0.05). Therefore, we do not have sufficient evidence to reject the null hypothesis, and we would state that the two means are statistically similar.
+   <img width="422" alt="image" src="https://user-images.githubusercontent.com/94858846/163301191-ac3e03ea-315b-4d27-b958-c9e5a2334332.png">
+   
+  - T-test on Manufacturing Lot 3 shows a p-value = 0.04 --> Which shows that the p-value is lesser than the significance level(=0.05). Therefore, we have sufficient evidence to reject the null hypothesis, and we would state that the two means are statistically not similar.
+   <img width="404" alt="image" src="https://user-images.githubusercontent.com/94858846/163301456-42d94a04-ebd0-4c3e-bd6b-580595451e93.png">
+   
+  - T-test on complete manufacturing lots shows a p-value = 0.06 --> Which shows that the p-value is higher than the significance level(=0.05). Therefore, we do not have sufficient evidence to reject the null hypothesis, and we would state that the two means are statistically similar.
+  <img width="382" alt="image" src="https://user-images.githubusercontent.com/94858846/163302335-7b13a9b0-eaa7-462c-a717-c22a7e14b465.png">
+
+  ## Analysis 4: Study Design: MechaCar vs Competition
+  This analysis was made to statistical study and compare performance of the MechaCar vehicles against performance of vehicles from other manufacturers. 
+  - What metric or metrics are you going to test?
+  The mpg data is a key feature which has to be competitive with the available other competition car models of same bodytype(sedans, SUVs etc) 
+  If available, even hybrid and EV options to be tested on like to like basis. 
+  
+  - What is the null hypothesis or alternative hypothesis?
+  The null hypothesis typically states that NO differences exist between the variables or groups of interest.
+  In this case, the null hypothesis might be of the similar lines of the mpg values of all the manufacturing lots are equal. 
+  
+  - What statistical test would you use to test the hypothesis? And why?
+  The analysis of variance (ANOVA) test, shall be used to test this hypothesis, as it is used to compare the means of a continuous numerical variable across a number of groups. 
+  
+  - What data is needed to run the statistical test?
+  Already existing data of "mpg" along with the body type information will be required for this analysis. 
+  Incase hybrid models are included then perhaps range(Miles) per full charge would be a data which will be sort after.  
